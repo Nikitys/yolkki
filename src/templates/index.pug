@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Yolkki
+    meta(content="" name="description")
+    meta(content="" name="keywords")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    link(rel='stylesheet' href='/assets/styles/app.min.css')
+    script(src='/assets/scripts/bundle.js' defer)
+
+  body
+    .wrapper
+      include common/sections/header.pug
+      .main
+        include screens/screen1.pug
+        include screens/screen2.pug
+        include screens/screen3.pug
+        include screens/screen4.pug
+        include screens/screen5.pug
+        include screens/screen6.pug
+        include screens/screen7.pug
+        include screens/screen8.pug
+        include screens/screen9.pug
+        include screens/screen10.pug
+    include common/sections/footer.pug
+    script(src="assets/scripts/bundle.js")

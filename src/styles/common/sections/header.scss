@@ -1,0 +1,28 @@
+.header{
+    & .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 45px 0;
+    }
+    &-block{
+        &:last-child{
+            text-align: right;
+        }
+        flex:0 1 320px;
+        &__title{
+            font-family: 'AvenirNext-Medium';
+            font-size: 11px;
+            color: #898989;
+            text-transform: uppercase;
+        }
+        &__link{
+            font-family: 'AvenirNext-Bold';
+            font-size: 14px;
+            color: #4A4A4A;
+        }
+    }
+    &-logo{
+        flex:0 1 320;
+    }
+}

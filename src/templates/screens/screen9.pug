@@ -1,0 +1,53 @@
+.screen.screen5
+    .container
+        .screen__title Выбрать квартиру
+        .screen5-main
+            .screen5-top
+                .screen5-top-list
+                    a.screen5-top-list__item.screen5-top-list__item--active(href="#") Все
+                    a.screen5-top-list__item(href="#") Студии
+                    a.screen5-top-list__item(href="#") Однокомнатные
+                    a.screen5-top-list__item(href="#") Двухкомнатные
+                    a.screen5-top-list__item(href="#") Трёхкомнатные
+            .screen9-main-list
+                .screen9-main-list-item
+                    - for (var i = 0; i<6; i++){
+                        case i
+                            when 0
+                                .screen9-main-list-item-flat.screen9-main-list-item-flat--sale
+                                    img(src="assets/images/flat-item1.svg", alt="").screen9-main-list-item-flat__img
+                                    .screen9-main-list-item-flat-desc
+                                        .screen9-main-list-item-flat-desc-block
+                                            .screen9-main-list-item-flat-desc-block__title 22,43 м<sup>2</sup>
+                                            .screen9-main-list-item-flat-desc-block__text Общая площадь
+                                        .screen9-main-list-item-flat-desc-block
+                                            .screen9-main-list-item-flat-desc-block__title 13,66 м<sup>2</sup>
+                                            .screen9-main-list-item-flat-desc-block__text Жилая площадь    
+                                    .screen9-main-list-item-flat__price 1 500 000 &#8381;
+                            when 3
+                                .screen9-main-list-item-flat.screen9-main-list-item-flat--hit
+                                    img(src="assets/images/flat-item1.svg", alt="").screen9-main-list-item-flat__img
+                                    .screen9-main-list-item-flat-desc
+                                        .screen9-main-list-item-flat-desc-block
+                                            .screen9-main-list-item-flat-desc-block__title 22,43 м<sup>2</sup>
+                                            .screen9-main-list-item-flat-desc-block__text Общая площадь
+                                        .screen9-main-list-item-flat-desc-block
+                                            .screen9-main-list-item-flat-desc-block__title 13,66 м<sup>2</sup>
+                                            .screen9-main-list-item-flat-desc-block__text Жилая площадь    
+                                    .screen9-main-list-item-flat__price 1 500 000 &#8381;
+                            default
+                                .screen9-main-list-item-flat
+                                    img(src="assets/images/flat-item1.svg", alt="").screen9-main-list-item-flat__img
+                                    .screen9-main-list-item-flat-desc
+                                        .screen9-main-list-item-flat-desc-block
+                                            .screen9-main-list-item-flat-desc-block__title 22,43 м<sup>2</sup>
+                                            .screen9-main-list-item-flat-desc-block__text Общая площадь
+                                        .screen9-main-list-item-flat-desc-block
+                                            .screen9-main-list-item-flat-desc-block__title 13,66 м<sup>2</sup>
+                                            .screen9-main-list-item-flat-desc-block__text Жилая площадь    
+                                    .screen9-main-list-item-flat__price 1 500 000 &#8381;
+                    -}
+               
+
+            
+                

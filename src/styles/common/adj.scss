@@ -1,0 +1,72 @@
+.html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .wrapper{
+    // min-width: 1200px;
+    overflow: hidden;
+  }
+  p{
+    margin: 0;
+    bottom: 0;
+  }
+  a{
+    text-decoration: none;
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  ul li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .wrapper{
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    height: 100%;
+    &:after{
+      display: block;
+      width: 100%;
+      content: "";
+    }
+  }
+  .footer{
+    //margin-top: -133px;
+    min-width: 1200px;
+  }
+  .container{
+    margin: 0 auto;
+    position: relative;
+    width: 85%;
+    height: 100%;
+    @include desctop{
+      width: 85%;
+    }
+    @include laptop{
+      width: 750px;
+    }
+    @include tablets{
+      width: 480px;
+    }
+    @include phones{
+      width: 95%;
+    }
+  }
+  html{
+    font-family: 'OpenSans';
+  }
+  .typed-cursor{
+    display: none;
+  }
+  
+  
