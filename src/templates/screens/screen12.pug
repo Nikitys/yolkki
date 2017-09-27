@@ -1,0 +1,30 @@
+- var month = ['январь','февраль','март','апрель','май','июнь','июль','август','сентябрь','ноябрь','октябрь','декабрь']
+.screen.screen12
+    .container
+        .screen__title Ход строительства
+        .screen12-main#tabs2
+            .screen12-main-top
+                .screen12-main-top-left.tabs-nav
+                    a.screen12-main-top-left-link.screen12-main-top-left-link--active(href="#screen12tab1")
+                        i.fa.fa-home
+                        span 1 очередь 
+                    a.screen12-main-top-left-link(href="#screen12tab2")
+                        i.fa.fa-home
+                        span 2 очередь 
+                    a.screen12-main-top-left-link(href="#screen12tab3")
+                        i.fa.fa-tint
+                        span Коммуникации
+                .screen12-main-top-right
+                    a.screen12-main-top-right-link(href="#") Записаться на экскурсию
+            .screen12-main-tabs.tabs-content
+                .screen12-item(id='screen12tab1')
+                    .screen12-main-tabs-top
+                        a.screen12-main-tabs-top__link.screen12-main-tabs-top__link--active(href="#") 2015
+                        a.screen12-main-tabs-top__link(href="#") 2016
+                        a.screen12-main-tabs-top__link(href="#") 2017
+                    .screen12-main-tabs-main
+                        each item in month
+                            .screen12-main-tabs-main-item(style="background: url('assets/images/month.jpg') center center no-repeat;")
+                                    .screen12-main-tabs-main-item__desc= item
+                .screen12-item(id='screen12tab2') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita voluptatibus quisquam quis quidem sapiente quasi quos. Soluta, alias amet tempore nihil autem eius iusto nam maiores quae nulla incidunt!
+                .screen12-item(id='screen12tab3') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita 

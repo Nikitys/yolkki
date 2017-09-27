@@ -1,12 +1,13 @@
 .screen.screen5
     .container
         .screen__title Инфраструктура
-        .screen5-main
+        .screen5-main#tabs
             .screen5-top
-                .screen5-top-list
-                    a.screen5-top-list__item.screen5-top-list__item--active(href="#") Инфраструктура жилого комплекса
-                    a.screen5-top-list__item(href="#") Инфраструктура района
-            .screen5-main-list
-                .screen5-main-list-item
+                .screen5-top-list.tabs-nav
+                    a.screen5-top-list__item.screen5-top-list__item--active(href="#tab1") Инфраструктура жилого комплекса
+                    a.screen5-top-list__item(href="#tab2") Инфраструктура района
+            .screen5-main-list.tabs-content
+                .screen5-main-list-item(id='tab1')
+                .screen5-main-list-item(id='tab2') таб2
 
                 

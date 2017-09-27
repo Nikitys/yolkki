@@ -1,0 +1,17 @@
+
+.screen.screen14
+    .container
+        .screen__title Акции
+        .screen14-main.screen14-main--slider
+            - for(var i = 0; i < 6; i++){
+                .screen14-main-item
+                    img(src="assets/images/screen14img.jpg", alt="").screen14-main-item__img
+                    .screen14-main-item__date 20 июля 2017
+                    .screen14-main-item__title Большой заголовок акции
+                    .screen14-main-item__text Загородное малоэтажное жилье в ЖК Yolkki Village не только комфортное, но и доступное по цене!
+            -}
+        .screen14-main-arr
+            a.screen14-main-arr__left
+                i.fa.fa-chevron-left    
+            a.screen14-main-arr__right
+                i.fa.fa-chevron-right

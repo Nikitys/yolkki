@@ -4,8 +4,9 @@
 @import 'common/font-awesome/font-awesome';
 @import 'common/fonts';
 //плагины
-// @import './node_modules/slick-carousel/slick/slick-theme';
-// @import './node_modules/slick-carousel/slick/slick';
+@import 'common/slick/slick';
+@import 'common/slick/slick-theme';
+@import 'common/jquery.fancybox.scss';
 //блоки
 @import 'common/sections/header';
 //страницы

@@ -85,7 +85,11 @@ function scripts() {
         .pipe(gulpWebpack(webpackConfig, webpack))
         .pipe(gulp.dest(paths.scripts.dest));
 }
-
+//перенос скриптов 
+function scriptsTransport() {
+    return gulp.src(paths.scripts.src)
+        .pipe(gulp.dest(paths.scripts.dest));
+}
 // очистка папки build
 function clean() {
     return del(paths.root);
@@ -105,7 +109,8 @@ function fonts() {
 
 // следим за src и запускаем нужные таски (компиляция и пр.)
 function watch() {
-    gulp.watch(paths.scripts.src, scripts);
+    // gulp.watch(paths.scripts.src, scripts);
+    gulp.watch(paths.scripts.src, scriptsTransport);
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.templates.src, templates);
     gulp.watch(paths.images.src, images);
@@ -132,7 +137,7 @@ exports.fonts = fonts;
 // сборка и слежка
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, scripts, templates, images, fonts),
+    gulp.parallel(styles, scripts,scriptsTransport, templates, images, fonts),
     gulp.parallel(watch, server)
 ));
-gulp.task('build',gulp.series(clean,styles,scripts, templates, images, fonts));
+gulp.task('build',gulp.series(clean,styles,scripts,scriptsTransport, templates, images, fonts));

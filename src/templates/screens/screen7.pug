@@ -1,30 +1,33 @@
+-var screen7Items = ['ДМИТРИЙ КЛИМОВИЧ', 'Валерка Селиванов', 'Михаил Глыбин']
 .screen.screen7
     .container
         .screen__title Команда
-        .screen6-main
-            .screen6-main-item
-                .screen6-main-item-left(style="background:url('assets/images/screen6-ava.jpg')top center no-repeat;")
-                .screen6-main-item-right
-                    .screen6-main-item-right-top
-                        .screen6-main-item-right-top__title ДМИТРИЙ <br> КЛИМОВИЧ
-                        .screen7-main-item-top-block
-                            a.screen6-main-item-right-top__sos(href="#")
-                                i.fa.fa-vk
-                                span Посмотреть профиль
-                            .screen6-main-item-right-top-arrows
-                                a.screen3-main-item-desc-arrows-arr.screen3-main-item-desc-arrows__left(href="#") <
-                                a.screen3-main-item-desc-arrows-arr.screen3-main-item-desc-arrows__right(href="#") >
-                    .screen7-main-item-right__dol Старший менеджер <br> по работе с клиентами
-                    .screen6-main-item-right__text «Proper cookery renders good food material more digestible. When scientifically done, cooking changes each of the food elements, with the exception of fats, in much the same manner as do the digestive juices, and at the same time it breaks up the food by dissolving the soluble portions, so that its elements are more readily»
-                    .screen7-main-item-right-footer
-                        a.screen7-main-item-right-footer__link(href="tel:+79817612701") 
-                            i.fa.fa-phone
-                            span +7 (981) 761-27-01
-                        a.screen7-main-item-right-footer__link(href="mailto:klimovich@yolkki.ru") 
-                            i.fa.fa-envelope
-                            span  klimovich@yolkki.ru
-                    .screen7-main-item-right-postfooter
-                         a.screen7-main-item-right-postfooter__but Показать карту подъезда к ЖК
+        .screen6-main.screen7-main--slider
+            each item in screen7Items
+                .screen7-item
+                    .screen6-main-item
+                        .screen6-main-item-left(style="background:url('assets/images/screen6-ava.jpg')top center no-repeat;")
+                        .screen6-main-item-right
+                            .screen6-main-item-right-top
+                                .screen6-main-item-right-top__title=item 
+                                .screen7-main-item-top-block
+                                    a.screen6-main-item-right-top__sos(href="#")
+                                        i.fa.fa-vk
+                                        span Посмотреть профиль
+                                    .screen6-main-item-right-top-arrows
+                                        a.screen3-main-item-desc-arrows-arr.screen7-main-item-desc-arrows__left(href="#") <
+                                        a.screen3-main-item-desc-arrows-arr.screen7-main-item-desc-arrows__right(href="#") >
+                            .screen7-main-item-right__dol Старший менеджер <br> по работе с клиентами
+                            .screen6-main-item-right__text «Proper cookery renders good food material more digestible. When scientifically done, cooking changes each of the food elements, with the exception of fats, in much the same manner as do the digestive juices, and at the same time it breaks up the food by dissolving the soluble portions, so that its elements are more readily»
+                            .screen7-main-item-right-footer
+                                a.screen7-main-item-right-footer__link(href="tel:+79817612701") 
+                                    i.fa.fa-phone
+                                    span +7 (981) 761-27-01
+                                a.screen7-main-item-right-footer__link(href="mailto:klimovich@yolkki.ru") 
+                                    i.fa.fa-envelope
+                                    span  klimovich@yolkki.ru
+                            .screen7-main-item-right-postfooter
+                                a.screen7-main-item-right-postfooter__but Показать карту подъезда к ЖК
                            
         
 

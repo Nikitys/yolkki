@@ -1,0 +1,14 @@
+- var menuItems = ['Начало', 'О проекте', 'Проект в цифрах', 'Преимущества', 'Расположение', 'Инфраструктура', 'Отзывы', 'Ход строительства', 'Выбрать квартиру', 'Отделка', 'Акции', 'Как купить', 'Наша команда', 'Контакты']
+.nav
+    a(href="#").nav-close
+        i.fa.fa-times
+    nav.nav-main
+        each item in menuItems
+                a(href="#").nav-main-item= item
+    .nav-footer
+        .nav-footer-top
+            a(href="#").nav-footer-top__link Сделано в <span>Ra-Studio</span>
+            a(href="#").nav-footer-top__link Пользовательское соглашение
+        .nav-footer-bot
+            img(src="assets/images/icons/danger.svg", alt="").nav-footer-bot__img
+            .nav-footer-bot__text Предложение на сайте <br> не является публичной офертой
