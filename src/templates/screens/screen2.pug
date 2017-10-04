@@ -1,5 +1,9 @@
 .screen.screen2
     .container
-        .screen2__title Современный <br> жилой комплекс
-        .screen2__text Новый жилой комплекс <span>Yolkki Village</span> – это сформированная по современным стандартам жилая среда с автономными коммуникациями и собственной развитой инфраструктурой
-        .screen2__img
+        .screen2__title Галерея
+        //- .screen2__text Новый жилой комплекс <span>Yolkki Village</span> – это сформированная по современным стандартам жилая среда с автономными коммуникациями и собственной развитой инфраструктурой
+        .screen2-main.screen2-main--slider
+            - for(var i = 0; i<3; i++){
+                .screen2-main-slide
+                    .screen2-main-slide__img(style="background: url('assets/images/screen2img.jpg') center center no-repeat")
+            -}

@@ -5,9 +5,10 @@ html
     title Yolkki
     meta(content="" name="description")
     meta(content="" name="keywords")
-    meta(content="width=device-width, initial-scale=1" name="viewport")
+    //- meta(content="width=device-width, initial-scale=1" name="viewport")
     meta(content="ie=edge" http-equiv="x-ua-compatible")
     link(rel='stylesheet' href='assets/styles/app.min.css')
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU", type="text/javascript")
     //- script(src='assets/scripts/bundle.js' defer)
 
   body
@@ -20,17 +21,22 @@ html
         include screens/screen3.pug
         include screens/screen4.pug
         include screens/screen5.pug
+        include screens/screen101
         include screens/screen6.pug
-        include screens/screen7.pug
-        include screens/screen8.pug
+        include screens/screen12.pug
         include screens/screen9.pug
         include screens/screen10.pug
-        include screens/screen12.pug
-        include screens/screen13.pug
         include screens/screen14.pug
+        include screens/screen13.pug
+        include screens/screen15.pug
+        include screens/screen7.pug
+        include screens/screen16.pug
+        include screens/screen8.pug
+      include common/controls
     include common/sections/footer.pug
     script(src="assets/scripts/common/jquery.min.js")
     script(src="assets/scripts/common/slick.min.js")
     script(src="assets/scripts/common/jquery.fancybox.js")
+    script(src="assets/scripts/common/jquery.nicescroll.min.js")
     script(src="assets/scripts/main.js")
     script(src="assets/scripts/bundle.js" defer)

@@ -1,0 +1,71 @@
+.popup#popup-callback(style="display: none")
+    .popup__title Заполните форму для обратного звонка
+    a(href="#").popup__close
+        i.fa.fa-times
+    form(action="").popup-form
+        .popup-form-item
+            label(for="name").popup-form-item__label Имя
+            input(type="text", id="name", placeholder="Виталий").popup-form-item__input.popup-form-item__input--first
+        .popup-form-item
+            label(for="phone").popup-form-item__label Телефон
+            input(type="text", id="phone", placeholder="Введите свой номер телефона").popup-form-item__input
+        .popup-form-item.popup-form-item--maxwidth
+            input(type="checkbox", name="check", id="check").popup-form-item__checkbox
+            label(for="check").popup-form-item__checkbox--label Я подтверждаю, что ознакомлен и согласен с Политикой обработки персональных данных этого сайта.
+        .popup-form-but
+            input(type="submit", value="Связаться с менеджером").popup-form-but__input
+.popup2.clearfix#popup-flat(style="display:none;")
+    a(href="#").popup__close
+        i.fa.fa-times
+    .popup2-left
+        img(src="assets/images/popup2-img.svg", alt="").popup2-left__img
+    .popup2-right
+        .popup2-right__title Студия
+        .popup2-right-top
+            .popup2-right-top-item
+                .popup2-right-top-item__title 1 267 295 ₽
+                .popup2-right-top-item__title1 Общая стоимость
+            .popup2-right-top-item
+                .popup2-right-top-item__title 22,43 м <sup>2</sup>
+                .popup2-right-top-item__title1 Общая 
+            .popup2-right-top-item
+                .popup2-right-top-item__title 13,96 м <sup>2</sup>
+                .popup2-right-top-item__title1 Жилая 
+            //- .popup2-right-top-item
+            //-     .popup2-right-top-item__title 13,96 м <sup>2</sup>
+            //-     .popup2-right-top-item__title1 Кухня
+        .popup2-right__text 
+        img(src="assets/images/flat-sale.svg", alt="").popup2-right__sale
+        .popup2-right__text 
+        .popup2-right-footer
+            .popup2-right-footer-top
+                a.popup2-right-footer-top__link.popup2-right-footer__link(href="#popup-callback",data-fancybox, data-src="#popup-callback") Заявка на кредит
+                a.popup2-right-footer-top__link1.popup2-right-footer__link(href="#")
+                    i.fa.fa-file-pdf-o
+                    span Распечатать план в PDF
+            .popup2-right-footer-bot
+                a.popup2-right-footer-bot__link.popup2-right-footer__link(href="#popup-callback",data-fancybox, data-src="#popup-callback") Связаться с менеджером для бронирования квартиры
+.popup3#popup3(style="display:none;")
+    a(href="#").popup__close
+        i.fa.fa-times
+    .popup3-top
+         .popup__title Заполните форму <br> для рассчета
+         .popup3-top-item
+            .popup3-top-item__title Ежемесячный платёж
+            .popup3-top-item__title1 
+                span 6 704 &#8381;
+    form(action="#").popup3-form
+        .popup-form-item.popup-form-item--popup3
+            label(for="price").popup-form-item__label Стоимость квартиры
+            input(type="text", id="price", placeholder="").popup-form-item__input.popup-form-item__input--popup3
+            span &#8381;
+        .popup-form-item.popup-form-item--popup3
+            label(for="vsnos").popup-form-item__label Первый взнос
+            input(type="text", id="vsnos", placeholder="").popup-form-item__input.popup-form-item__input--popup3
+            span &#8381;
+        .popup-form-item.popup-form-item--popup3
+            label(for="time").popup-form-item__label Срок
+            input(type="text", id="time", placeholder="").popup-form-item__input.popup-form-item__input--popup3
+            span Лет
+        .popup-form-but.popup-form-but--popup3
+            input(type="submit", value="Запрос на одобрение").popup-form-but__input         

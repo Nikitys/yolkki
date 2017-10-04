@@ -15,16 +15,28 @@
                         i.fa.fa-tint
                         span Коммуникации
                 .screen12-main-top-right
-                    a.screen12-main-top-right-link(href="#") Записаться на экскурсию
+                    a.screen12-main-top-right-link(href="#popup-callback",data-fancybox, data-src="#popup-callback") Записаться на экскурсию
             .screen12-main-tabs.tabs-content
                 .screen12-item(id='screen12tab1')
                     .screen12-main-tabs-top
                         a.screen12-main-tabs-top__link.screen12-main-tabs-top__link--active(href="#") 2015
-                        a.screen12-main-tabs-top__link(href="#") 2016
-                        a.screen12-main-tabs-top__link(href="#") 2017
+                        //- a.screen12-main-tabs-top__link(href="#") 2016
+                        //- a.screen12-main-tabs-top__link(href="#") 2017
                     .screen12-main-tabs-main
                         each item in month
-                            .screen12-main-tabs-main-item(style="background: url('assets/images/month.jpg') center center no-repeat;")
+                            a(href="assets/images/month.jpg" data-fancybox="images" data-caption="My caption").screen12-main-tabs-main-item(style="background: url('assets/images/month.jpg') center center no-repeat;")
                                     .screen12-main-tabs-main-item__desc= item
-                .screen12-item(id='screen12tab2') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita voluptatibus quisquam quis quidem sapiente quasi quos. Soluta, alias amet tempore nihil autem eius iusto nam maiores quae nulla incidunt!
+                                    .screen10-main-right__img--plus
+                                        i.fa.fa-search-plus
+                .screen12-item(id='screen12tab2')
+                    .screen12-main-tabs-top
+                        a.screen12-main-tabs-top__link.screen12-main-tabs-top__link--active(href="#") 2015
+                        //- a.screen12-main-tabs-top__link(href="#") 2016
+                        //- a.screen12-main-tabs-top__link(href="#") 2017
+                    .screen12-main-tabs-main
+                        each item in month
+                            a(href="assets/images/month.jpg" data-fancybox="images" data-caption="My caption").screen12-main-tabs-main-item(style="background: url('assets/images/month.jpg') center center no-repeat;")
+                                    span.screen12-main-tabs-main-item__desc= item
+                                    .screen10-main-right__img--plus
+                                        i.fa.fa-search-plus
                 .screen12-item(id='screen12tab3') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit expedita 

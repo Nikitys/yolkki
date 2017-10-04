@@ -1,5 +1,5 @@
 // no longer use image-url since that is not a part of the sass spec.  Instead assign your path to this variable
-$fancybox-image-url: '../img' !default;
+$fancybox-image-url: '../images' !default;
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,
@@ -30,6 +30,7 @@ $fancybox-image-url: '../img' !default;
 .fancybox-skin {
 	position: relative;
 	background: #f9f9f9;
+	padding: 0!important;
 	color: #444;
 	text-shadow: none;
 	-webkit-border-radius: 4px;
@@ -102,6 +103,7 @@ $fancybox-image-url: '../img' !default;
 
 .fancybox-close {
 	position: absolute;
+	display: none;
 	top: -18px;
 	right: -18px;
 	width: 36px;

@@ -1,0 +1,9 @@
+- var controlsItems = ['Начало', 'О проекте', 'Проект в цифрах', 'Преимущества', 'Расположение', 'Инфраструктура', 'О застройщике', 'Отзывы', 'Ход строительства', 'Выбрать квартиру', 'Отделка', 'Акции', 'Как купить', 'Новости', 'Наша команда', 'Документация', 'Контакты']
+.controls
+    each item,index in controlsItems
+        if index == 0
+            a(href="#").controls-item.controls-item--active
+                span= item
+        else
+            a(href="#").controls-item
+                span= item

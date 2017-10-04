@@ -11,10 +11,10 @@
                     a.screen5-top-list__item(href="#flattab5") Трёхкомнатные
             .screen9-main-list.tabs-content
                 .screen9-main-list-item(id='flattab1')
-                    - for (var i = 0; i<6; i++){
+                    - for (var i = 0; i<20; i++){
                         case i
                             when 0
-                                .screen9-main-list-item-flat.screen9-main-list-item-flat--sale
+                                .screen9-main-list-item-flat.screen9-main-list-item-flat--sale(href="#popup-flat",data-fancybox, data-src="#popup-flat")
                                     img(src="assets/images/flat-item1.svg", alt="").screen9-main-list-item-flat__img
                                     .screen9-main-list-item-flat-desc
                                         .screen9-main-list-item-flat-desc-block
@@ -61,7 +61,7 @@
                                     .screen9-main-list-item-flat__price 1 500 000 &#8381;
                     -}
                 .screen9-main-list-item(id='flattab3')
-                    - for (var i = 0; i<2q; i++){
+                    - for (var i = 0; i<2; i++){
                                 .screen9-main-list-item-flat.screen9-main-list-item-flat--sale
                                     img(src="assets/images/flat-item1.svg", alt="").screen9-main-list-item-flat__img
                                     .screen9-main-list-item-flat-desc

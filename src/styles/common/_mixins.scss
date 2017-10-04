@@ -4,7 +4,7 @@
     }
 }
 @mixin notebook{
-    @media screen and (min-width:993px) and (max-width:1330px){
+    @media screen and (min-width:993px) and (max-width:1400px){
         @content;
     }
 }
