@@ -1,0 +1,66 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+.preloader{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: #fff;
+    position:fixed;
+    z-index:100;
+    &-img{
+        @keyframes animate1{
+            0% {
+                transform:scale(1.0);
+            }
+            50% {
+                transform:scale(2.5);
+            }
+            100%{
+                transform:scale(1.0);
+            }
+        }
+        @keyframes animate2{
+            0% {
+                transform:scale(2.5);
+            }
+            50% {
+                transform:scale(1.0);
+            }
+            100%{
+                transform:scale(2.0);
+            }
+        }
+        @keyframes animate3{
+            0% {
+                transform:scale(1.0);
+            }
+            50% {
+                transform:scale(2.5);
+            }
+            100%{
+                transform:scale(1.0);
+            }
+        }
+    
+        .yolka{
+            animation-duration:2s;
+            animation-delay:0ms;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            transform-origin:bottom;
+        }
+        .yolka_1{
+            animation-name: animate1;
+        }
+        .yolka_2{
+            animation-name: animate2;
+        }
+        .yolka_3{
+            animation-name: animate3;
+        }
+    }
+}

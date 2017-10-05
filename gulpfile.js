@@ -58,7 +58,7 @@ function templates() {
 
 // scss
 function styles() {
-    return gulp.src('./src/styles/app.scss')
+    return gulp.src('./src/styles/*.scss')
         .pipe(plumber({
             errorHandler: notify.onError(function (err) {
                 return {title: 'Стили посмотри плуг', message: err.message}

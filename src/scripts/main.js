@@ -48,9 +48,18 @@ $(document).ready(function () {
     })
     var carouselScreen14 = $('.screen14-main--slider').slick({
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 5,
         draggable: false,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        responsive: [
+            {
+              breakpoint: 1444,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2
+              }
+            }
+          ]
     });
     $(document).on('click', '.screen14-main-arr__left', function (e) {
         e.preventDefault();
@@ -62,9 +71,18 @@ $(document).ready(function () {
     })
     var carouselScreen15 = $('.screen15-main--slider').slick({
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 5,
         draggable: false,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        responsive: [
+            {
+              breakpoint: 1444,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2
+              }
+            }
+          ]
     });
     // menu
     $(document).on('click', '.nav-open', function (e) {
@@ -154,7 +172,7 @@ $(document).ready(function () {
         //     cursorcolor: "#4A90E2"
         // });
     });
-
+    
 
     // var price = $('#price').val(),
     //     firstMoney = $('#vsnos').val(),
@@ -191,5 +209,25 @@ $(document).ready(function () {
         
         myMap.geoObjects.add(myPlacemark);
     }
+    var hint = $('.screen5-tooltip');
+    $('.infra_label').on({
+        mouseenter: function(){
+            var tool = $(this).attr('data-labelname');
+            hint.text(tool).show();
+        },
+        mouseleave: function(){
+            hint.hide();
+        },
+        mousemove: function(e){
+            hint.css({top: e.pageY - 80, left: e.pageX - 110});
+        }
+    });
 });
 
+$(window).on('load', function () {
+    var $preloader = $('.preloader'),
+        $spinner   = $preloader.find('.preloader-img');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+    
+});

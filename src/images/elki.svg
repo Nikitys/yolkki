@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="15px" viewBox="0 0 31 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Backstage" transform="translate(-703.000000, -45.000000)" fill-rule="nonzero" fill="#7A9255">
+            <g transform="translate(50.000000, 45.000000)" id="Header">
+                <g>
+                    <g id="logo" transform="translate(607.000000, 0.000000)">
+                        <g id="Group">
+                            <polygon id="Shape" points="69.9213609 12.0059345 73.0915004 12.834678 69.3429953 1.71823276 65.5988388 12.834678 68.7646297 12.0015955 68.7646297 13.8847092 61.9416547 13.8847092 61.9416547 11.8714263 65.5988388 12.834678 61.2719681 0 56.949446 12.834678 60.6022816 11.8714263 60.6022816 13.8847092 53.7793066 13.8847092 53.7793066 12.0015955 56.949446 12.834678 53.200941 1.71823276 49.4567845 12.834678 52.6225753 12.0015955 52.6225753 13.8847092 46.0518199 13.8847092 46.0518199 14.4878262 76.4529788 14.4878262 76.4529788 13.8847092 69.9213609 13.8847092"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

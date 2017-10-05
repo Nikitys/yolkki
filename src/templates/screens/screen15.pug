@@ -2,9 +2,9 @@
     .container
         .screen__title Новости
         .screen14-main
-            .screen15-main--slider
+            .screen14-main-slider-center.screen15-main--slider
                 - for(var i = 0; i < 6; i++){
-                    .screen14-main-item
+                    a(href="#popup-news",data-fancybox, data-src="#popup-news").screen14-main-item
                         img(src="assets/images/screen14img.jpg", alt="").screen14-main-item__img
                         .screen14-main-item__date 20 июля 2017
                         .screen14-main-item__title Большой заголовок акции
